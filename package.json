@@ -1,9 +1,12 @@
 {
   "version": "1.0.0",
   "description": "My webpack project",
+  "homepage": "https://mirror.raptor.pizza",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "predeploy": "webpack && cp CNAME dist/CNAME",
+    "deploy": "gh-pages -d dist -u 'traysimay <teh@raptor.pizza>'"
   },
   "devDependencies": {
     "@babel/core": "^7.6.3",
@@ -11,6 +14,7 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "file-loader": "^4.2.0",
+    "gh-pages": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9",

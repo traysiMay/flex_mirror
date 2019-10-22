@@ -2,7 +2,7 @@ import { SocketService } from './meepo'
 import * as THREE from 'three'
 import { GUI } from './dat.gui.module'
 
-import mp3 from './bicepPreview.mp3'
+import mp3 from './biceP.mp3'
 let scene, renderer, camera, clock, width, height, video
 let particles, videoWidth, videoHeight, imageCache
 const canvas = document.createElement('canvas')
